@@ -1,12 +1,8 @@
-import React from 'react'
-import MainLayout from '../../layout/mainLayout/mainLayout'
+import React from "react";
+import MainLayout from "../../layout/mainLayout/mainLayout";
 
 const Landing = () => {
-  return (
-    <MainLayout>
-        szdxfcgvbhjnmzsdxfcgvbn
-    </MainLayout>
-  )
-}
+  return <div>szdxfcgvbhjnmzsdxfcgvbn</div>;
+};
 
-export default Landing
+export default Landing;

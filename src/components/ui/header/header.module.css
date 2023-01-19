@@ -1,0 +1,24 @@
+.main {
+  background-color: lightblue;
+  width: 100%;
+  padding: 35px 0 10px;
+}
+.main header {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.main nav a:not(:last-child) {
+  margin-right: 40px;
+}
+.main nav a:last-child {
+  padding: 10px 30px;
+  background: linear-gradient(278.21deg, #005490 1.66%, #328bcb 96.78%);
+  border-radius: 4px;
+}
