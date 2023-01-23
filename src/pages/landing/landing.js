@@ -1,8 +1,13 @@
-import React from "react";
+import classes from "./landing.module.css";
 import MainLayout from "../../layout/mainLayout/mainLayout";
+import Hero from "../../components/hero/hero";
 
 const Landing = () => {
-  return <div>szdxfcgvbhjnmzsdxfcgvbn</div>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 };
 
 export default Landing;
