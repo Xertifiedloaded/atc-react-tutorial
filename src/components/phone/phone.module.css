@@ -1,0 +1,43 @@
+.main {
+  width: 85%;
+  margin: 100px auto 150px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.phone,
+.phoneContent {
+  width: 40%;
+}
+.phone > img {
+  width: 95%;
+}
+
+.phone > .circle {
+  width: 45%;
+  position: absolute;
+  transform: translateX(-65px);
+  top: 40px;
+  z-index: -1;
+  left: 70px;
+}
+.phoneContent h3 {
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0.3px;
+  color: #034d82;
+  width: 75%;
+}
+.phoneContent p {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.3px;
+  color: #90a3b4;
+  margin: 24px 0 36px;
+}
+.phoneContent a {
+  text-decoration: none;
+  color: #04aadd;
+  font-weight: 700;
+}

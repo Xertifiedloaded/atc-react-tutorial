@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import classes from "./footer.module.css";
 import Logo from "../../../asset/images/logo.svg";
-import Google from "../../../asset/images/google.svg";
+import Google from "../../../asset/images/google-small.svg";
 import Twitter from "../../../asset/images/twitter.svg";
 import Instagram from "../../../asset/images/instagram.svg";
 import Linked from "../../../asset/images/linkedIn.svg";
@@ -17,7 +17,9 @@ const Footer = () => {
               <img src={Logo} alt="" />
             </Link>
           </h3>
-          <p>Build a modern and creative <br /> website with crealand</p>
+          <p>
+            Build a modern and creative <br /> website with crealand
+          </p>
           <div className={classes.socials}>
             <a href="#" target="_blank" rel="noopener noreferrer">
               <img src={Google} alt="" />
