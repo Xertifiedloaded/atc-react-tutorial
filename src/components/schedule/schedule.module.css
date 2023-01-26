@@ -1,0 +1,54 @@
+.main {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scheduleContent h3 {
+  width: 80%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0.3px;
+  color: #034d82;
+}
+.scheduleContent p {
+  width: 85%;
+  margin: 24px 0;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.3px;
+  color: #90a3b4;
+}
+.scheduleContent li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+  color: #90a3b4;
+}
+.scheduleContent li:not(:last-child) {
+  margin-bottom: 17px;
+}
+.scheduleContent li img {
+  margin-right: 12px;
+}
+.scheduleContent a {
+  text-decoration: none;
+  color: #04aadd;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 32px;
+}
+.scheduleContent {
+  width: 45%;
+}
+.mac {
+  width: 55%;
+}
+.mac > img {
+  width: 100%;
+}
