@@ -1,0 +1,54 @@
+.main {
+  width: 85%;
+  margin: 0 auto;
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.growth h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0.3px;
+  color: #034d82;
+}
+.growth p {
+  letter-spacing: 0.3px;
+  color: #90a3b4;
+}
+.growth,
+.carousel {
+  width: 50%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

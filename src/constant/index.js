@@ -2,6 +2,7 @@ import Growth from "../asset/images/growth.svg";
 import Feather from "../asset/images/feather.svg";
 import Navigate from "../asset/images/navigate.svg";
 import Rise from "../asset/images/rise.svg";
+import Customer from "../asset/images/customer.svg";
 
 export const cardData = [
   {
@@ -27,5 +28,43 @@ export const cardData = [
     image: Navigate,
     title: "Hashtag Location",
     text: "Visualize where people are posting using your hashtag made.",
+  },
+];
+
+export const carouselData = [
+  {
+    image: Customer,
+    review:
+      "With Ehya, we’re able to easily track our performance in full detail. It’s become an essential tool for us to grow and engage with our audience.",
+    title: "Jaquon Hart",
+    position: "Digital Marketing Executive, Hypebeast",
+  },
+  {
+    image: Customer,
+    review:
+      "With Ehya, we’re able to easily track our performance in full detail. It’s become an essential tool for us to grow and engage with our audience.",
+    title: "Olaitan Makinde",
+    position: "Frontend Developer",
+  },
+  {
+    image: Customer,
+    review:
+      "With Ehya, we’re able to easily track our performance in full detail. It’s become an essential tool for us to grow and engage with our audience.",
+    title: "Bankole Yusuf",
+    position: "Program Manager",
+  },
+  {
+    image: Customer,
+    review:
+      "With Ehya, we’re able to easily track our performance in full detail. It’s become an essential tool for us to grow and engage with our audience.",
+    title: "Jaquon Rasheed",
+    position: "Digital Marketing Executive, Hypebeast",
+  },
+  {
+    image: Customer,
+    review:
+      "With Ehya, we’re able to easily track our performance in full detail. It’s become an essential tool for us to grow and engage with our audience.",
+    title: "Jaquon Tayo",
+    position: "Digital Marketing Executive, Hypebeast",
   },
 ];
