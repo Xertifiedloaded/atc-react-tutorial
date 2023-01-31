@@ -9,3 +9,30 @@ button,
 input {
   font-family: "DM Sans", sans-serif;
 }
+.swiper-pagination-bullet-active {
+  background-color: #034d82 !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
+  background-color: #034d82;
+  border-radius: 50%;
+  width: 30px !important;
+  height: 30px !important;
+  position: relative;
+}
+.swiper-button-prev {
+  left: 0% !important;
+}
+.swiper-button-next::after {
+  position: absolute;
+  top: -55%;
+  right: 30%;
+  content: url(./asset/images/next-arrow.svg) !important;
+}
+.swiper-button-prev::after {
+  position: absolute;
+  top: -55%;
+  left: 30%;
+  content: url(./asset/images/prev-arrow.svg) !important;
+}

@@ -1,5 +1,5 @@
-// import Swiper from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/bundle";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
@@ -16,6 +16,7 @@ const Customer = () => {
       </div>
       <div className={classes.carousel}>
         <Swiper
+          autoHeight={true}
           cssMode={true}
           navigation={true}
           pagination={true}
@@ -25,8 +26,8 @@ const Customer = () => {
           className={classes.mySwiper}
         >
           {carouselData.map((item, i) => (
-            <SwiperSlide>
-              <Carousel {...item} key={i} />
+            <SwiperSlide key={i}>
+              <Carousel {...item} />
             </SwiperSlide>
           ))}
         </Swiper>
