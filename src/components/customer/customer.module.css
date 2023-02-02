@@ -15,10 +15,11 @@
 .growth p {
   letter-spacing: 0.3px;
   color: #90a3b4;
+  margin-top: 10px;
 }
 .growth,
 .carousel {
-  width: 50%;
+  width: 40%;
 }
 .mySwiper {
   height: 250px;
