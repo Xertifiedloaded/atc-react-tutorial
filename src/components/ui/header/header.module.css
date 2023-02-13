@@ -3,6 +3,14 @@
   width: 100%;
   padding: 35px 0 10px;
 }
+.back {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(120, 180, 220, 0.499124649859944) 100%
+  );
+}
+
 .main header {
   width: 85%;
   margin: 0 auto;
@@ -13,6 +21,12 @@
 .main nav a {
   text-decoration: none;
   color: #ffffff;
+}
+.links {
+  color: black !important;
+}
+.links img {
+  filter: invert(1);
 }
 .main nav a:not(:last-child) {
   margin-right: 40px;
