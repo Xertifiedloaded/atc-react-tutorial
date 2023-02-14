@@ -1,0 +1,49 @@
+.form {
+  width: 48%;
+}
+.form h3 {
+  color: #0f001a;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.inputs input,
+.inputs textarea {
+  width: 100%;
+  display: block;
+  padding: 16px 14px;
+  margin-bottom: 20px;
+  border: 1.2px solid #b4bec8;
+  border-radius: 4px;
+  outline: none;
+}
+.inputs input {
+  height: 50px;
+}
+.inputs input::placeholder,
+.inputs textarea::placeholder {
+  font-family: "DM Sans", sans-serif;
+  color: #878787;
+  font-size: 16px;
+  opacity: 0.8;
+}
+.inputs textarea {
+  height: 120px;
+  resize: none;
+}
+.inputs button {
+  display: block;
+  width: 100%;
+  background: #4a99d3;
+  border-radius: 4px;
+  height: 50px;
+  border: 2px solid #4a99d3;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+.inputs button:hover {
+  background-color: #fff;
+  color: #4a99d3;
+}

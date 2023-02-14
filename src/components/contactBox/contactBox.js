@@ -1,11 +1,14 @@
-import React from "react";
+import Address from "./address/address";
+import classes from "./contactBox.module.css";
+import FormBox from "./formBox/formBox";
 
 const ContactBox = () => {
   return (
-    <div>
+    <div className={classes.main}>
       <h3>Get In Touch</h3>
-      <div>
-        
+      <div className={classes.info}>
+        <FormBox />
+        <Address />
       </div>
     </div>
   );
