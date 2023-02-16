@@ -1,6 +1,7 @@
 import Address from "./address/address";
 import classes from "./contactBox.module.css";
 import FormBox from "./formBox/formBox";
+import Rectangle from "../../asset/images/rectangle.svg";
 
 const ContactBox = () => {
   return (
@@ -10,6 +11,8 @@ const ContactBox = () => {
         <FormBox />
         <Address />
       </div>
+      <img src={Rectangle} alt="icon" className={classes.topRec} />
+      <img src={Rectangle} alt="icon" className={classes.bottomRec} />
     </div>
   );
 };
