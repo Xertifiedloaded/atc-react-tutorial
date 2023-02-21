@@ -6,29 +6,29 @@ import classes from "./mainLayout.module.css";
 
 export const UserContext = createContext();
 const MainLayout = () => {
-  const [user, setUser] = useState("Olaitan");
-  const [count, setCount] = useState(0);
+  // const [user, setUser] = useState("Olaitan");
+  // const [count, setCount] = useState(0);
 
-  const handleCount = () => {
-    // e.preventDefault();
-    // setTimeout(() => {
-    //   setCount((count) => count + 1);
-    // }, 1000);
-  };
+  // const handleCount = () => {
+  //   e.preventDefault();
+  //   setTimeout(() => {
+  //     setCount((count) => count + 1);
+  //   }, 1000);
+  // };
 
-  useEffect(() => {
-    handleCount();
-  });
+  // useEffect(() => {
+  //   handleCount();
+  // });
 
   return (
     <>
-      <UserContext.Provider value={{ user, count }}>
-        <Header />
-        <main>
-          <Outlet />
-        </main>
-        <Footer />
-      </UserContext.Provider>
+      {/* <UserContext.Provider value={{ user, count }}> */}
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+      {/* </UserContext.Provider> */}
     </>
   );
 };

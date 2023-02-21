@@ -7,11 +7,10 @@ import Tw from "../../../asset/images/tw.svg";
 import Ig from "../../../asset/images/ig.svg";
 import Youtube from "../../../asset/images/youtube.svg";
 
-const Address = ({ count }) => {
+const Address = () => {
   return (
     <div className={classes.main}>
       <div className={classes.location}>
-        <h3>{count}</h3>
         <p>
           <img src={Location} alt="icon" />
           Infomation technologies building, Victoria Island, Lagos, Nigeria.

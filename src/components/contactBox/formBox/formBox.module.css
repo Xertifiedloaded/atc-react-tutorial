@@ -7,6 +7,7 @@
   font-weight: 500;
   margin-bottom: 24px;
 }
+
 .inputs input,
 .inputs textarea {
   width: 100%;
@@ -46,4 +47,13 @@
 .inputs button:hover {
   background-color: #fff;
   color: #4a99d3;
+}
+.inputs label {
+  position: relative;
+}
+span {
+  position: absolute;
+  bottom: -16px;
+  color: red;
+  font-size: 14px;
 }
