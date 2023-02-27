@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from "react";
-import { UserContext } from "../../../layout/mainLayout/mainLayout";
+import { useState } from "react";
 import classes from "./formBox.module.css";
 
 const FormBox = () => {
@@ -10,11 +9,9 @@ const FormBox = () => {
   });
 
   const [error, setError] = useState(false);
-  let isValid;
-  const handleBlur = () => {
-    if (!isValid) setError(true);
-    else setError(false);
-  };
+  // let isValid = payload.name.length > 3;
+
+  // const handleBlur = () => {};
 
   const handleChange = (e) => {
     setPayload((prev) => ({
@@ -25,6 +22,13 @@ const FormBox = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (
+      payload.name.length < 3 ||
+      payload.email.length < 3 ||
+      payload.message.length < 3
+    ) {
+      setError(true);
+    } else setError(false);
     console.log(payload);
   };
 
@@ -36,38 +40,38 @@ const FormBox = () => {
           <input
             type="text"
             name="name"
-            isValid={payload.name.length > 3}
             value={payload.name}
-            onBlur={handleBlur}
             placeholder="Name"
             onChange={handleChange}
+            // onBlur={handleBlur}
+            required
           />
-         {error && <span>Name must be atleast 3 letters</span>}
+          {/* {error && <span>Name must be atleast 3 letters</span>} */}
         </label>
         <label>
           <input
             name="email"
             value={payload.email}
-            isValid={payload.name.length > 3}
-            onBlur={handleBlur}
+            required
             type="text"
             placeholder="Email Address"
             onChange={handleChange}
+            // onBlur={handleBlur}
           />
-          {/* <span>Name must be atleast 3 letters</span> */}
+          {/* {error && <span>Name must be atleast 3 letters</span>} */}
         </label>
         <label>
           <textarea
             name="message"
             value={payload.message}
-            isValid={payload.name.length > 3}
             placeholder="Your Messages"
             onChange={handleChange}
-            onBlur={handleBlur}
+            // onBlur={handleBlur}
           ></textarea>
-          {/* <span>Name must be atleast 3 letters</span> */}
+          {/* {error && <span>Name must be atleast 3 letters</span>} */}
         </label>
         <button onClick={handleSubmit}>Send</button>
+        {error && <span>fields must be greater than 3 letters</span>}
       </div>
     </form>
   );

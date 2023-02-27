@@ -12,36 +12,39 @@ const Header = () => {
   return (
     <div
       className={`${classes.main} ${
-        location.pathname == "/contact" && classes.back
+        location.pathname === "/contact" && classes.back
       }`}
     >
       <header>
         <NavLink to="/">
           <img
-            src={location.pathname == "/contact" ? LogoBlack : Logo}
+            src={location.pathname === "/contact" ? LogoBlack : Logo}
             alt="logo"
           />
         </NavLink>
         <nav>
-          <NavLink className={location.pathname == "/contact" && classes.links}>
+          <NavLink className={location.pathname === "/contact" && classes.links}>
             Home
           </NavLink>
-          <NavLink className={location.pathname == "/contact" && classes.links}>
+          <NavLink className={location.pathname === "/contact" && classes.links}>
             Landing <img src={Arrow} alt="arrow" />
           </NavLink>
-          <NavLink className={location.pathname == "/contact" && classes.links}>
+          <NavLink className={location.pathname === "/contact" && classes.links}>
             Pages <img src={Arrow} alt="arrow" />
           </NavLink>
           <NavLink
             to="/contact"
-            className={location.pathname == "/contact" && classes.links}
+            className={location.pathname === "/contact" && classes.links}
           >
             Docs
           </NavLink>
-          <NavLink className={location.pathname == "/contact" && classes.links}>
-            Help
+          <NavLink
+            to="/users"
+            className={location.pathname === "/contact" && classes.links}
+          >
+            Users
           </NavLink>
-          <NavLink className={location.pathname == "/contact" && classes.links}>
+          <NavLink className={location.pathname === "/contact" && classes.links}>
             Login
           </NavLink>
         </nav>

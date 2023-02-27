@@ -52,8 +52,8 @@
   position: relative;
 }
 span {
-  position: absolute;
+  /* position: absolute;
   bottom: -16px;
   color: red;
-  font-size: 14px;
+  font-size: 14px; */
 }

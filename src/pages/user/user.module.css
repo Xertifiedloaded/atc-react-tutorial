@@ -1,0 +1,31 @@
+.main {
+  width: 85%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.card {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card h3 {
+  color: #034d82;
+}
+.card a {
+  text-decoration: none;
+}
+.card .email {
+  color: #000;
+  margin: 10px 0;
+}
+.card .view {
+  padding: 5px 10px;
+  background-color: #4a99d3;
+  color: #fff;
+  border-radius: 3px;
+}
