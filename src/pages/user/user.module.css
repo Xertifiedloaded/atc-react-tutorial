@@ -2,9 +2,13 @@
   width: 85%;
   margin: 0 auto;
   padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 4fr));
+  grid-gap: 30px
+;
 }
 .card {
-  width: 220px;
+  /* width: 220px; */
   height: 220px;
   display: flex;
   box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
@@ -18,10 +22,13 @@
 }
 .card a {
   text-decoration: none;
+  text-align: center;
 }
 .card .email {
   color: #000;
-  margin: 10px 0;
+  margin: 10px auto;
+  width: 90%;
+  word-wrap: break-word;
 }
 .card .view {
   padding: 5px 10px;

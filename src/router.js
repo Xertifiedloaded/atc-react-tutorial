@@ -2,6 +2,7 @@ import { useRoutes } from "react-router-dom";
 import MainLayout from "./layout/mainLayout/mainLayout";
 import Contact from "./pages/contact/contact";
 import Landing from "./pages/landing/landing";
+import Profile from "./pages/profile/profile";
 import User from "./pages/user/user";
 
 const Routes = () => {
@@ -21,6 +22,10 @@ const Routes = () => {
         {
           path: "/users",
           element: <User />,
+        },
+        {
+          path: "/profile/:id",
+          element: <Profile />,
         },
       ],
     },

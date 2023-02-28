@@ -1,0 +1,41 @@
+.main {
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+.profile {
+  max-width: 800px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.547);
+  background: linear-gradient(
+    to right,
+    rgba(211, 211, 211, 0.547) 50%,
+    #fff 50%
+  );
+}
+.picture,
+.info {
+  width: 47%;
+}
+.picture > img {
+  width: 100%;
+}
+.info {
+  height: 100%;
+}
+.info h2 {
+  font-size: 35px;
+  color: rgb(84, 84, 84);
+}
+.info label {
+  font-size: 18px;
+  color: rgb(56, 55, 55);
+}
+.info address {
+  margin-top: 20px;
+}

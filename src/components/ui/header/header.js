@@ -3,8 +3,6 @@ import Arrow from "../../../asset/images/angle-down.svg";
 import Logo from "../../../asset/images/logo.svg";
 import LogoBlack from "../../../asset/images/logo-black.svg";
 import { NavLink, useLocation } from "react-router-dom";
-import { useContext } from "react";
-import { UserContext } from "../../../layout/mainLayout/mainLayout";
 
 const Header = () => {
   const location = useLocation();
