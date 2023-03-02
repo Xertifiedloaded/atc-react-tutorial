@@ -2,12 +2,15 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./user.module.css";
+import Loader from "../../asset/images/loader.gif";
 
 const User = () => {
+  const [loading, setLoading] = useState(false);
   const [users, setUsers] = useState([]);
 
   const getUsers = async () => {
     try {
+      setLoading(true);
       const res = await axios({
         method: "GET",
         url: "https://dummyjson.com/users",
@@ -17,7 +20,9 @@ const User = () => {
       });
       console.log(res.data.users);
       setUsers(res.data.users);
+      setLoading(false);
     } catch (error) {
+      setLoading(false);
       console.log(error);
     }
   };
@@ -27,11 +32,19 @@ const User = () => {
   }, []);
 
   return (
-    <div className={classes.main}>
-      {users.map((item, i) => (
-        <UserCard users={users} {...item} key={i} index={i} />
-      ))}
-    </div>
+    <>
+      {loading ? (
+        <div className={classes.loader}>
+          <img src={Loader} alt="loader" />
+        </div>
+      ) : (
+        <div className={classes.main}>
+          {users.map((item, i) => (
+            <UserCard users={users} {...item} key={i} index={i} />
+          ))}
+        </div>
+      )}
+    </>
   );
 };
 

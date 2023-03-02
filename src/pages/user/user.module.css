@@ -4,11 +4,9 @@
   padding: 100px 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 4fr));
-  grid-gap: 30px
-;
+  grid-gap: 30px;
 }
 .card {
-  /* width: 220px; */
   height: 220px;
   display: flex;
   box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
@@ -35,4 +33,13 @@
   background-color: #4a99d3;
   color: #fff;
   border-radius: 3px;
+}
+.loader {
+  width: 100%;
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+}
+.loader >img{
+  width: 20%;
 }
