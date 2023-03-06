@@ -22,6 +22,9 @@
   text-decoration: none;
   color: #ffffff;
 }
+.main nav .active{
+  color: #005490;
+}
 .links {
   color: black !important;
 }

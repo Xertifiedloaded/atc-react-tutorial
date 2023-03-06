@@ -21,28 +21,62 @@ const Header = () => {
           />
         </NavLink>
         <nav>
-          <NavLink className={location.pathname === "/contact" && classes.links}>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `${
+                isActive
+                  ? classes.active
+                  : "" || location.pathname === "/contact"
+                  ? classes.links
+                  : ""
+              }`
+            }
+          >
             Home
           </NavLink>
-          <NavLink className={location.pathname === "/contact" && classes.links}>
+          <NavLink
+            to="landing"
+            className={({ isActive }) =>
+              `${
+                isActive
+                  ? classes.active
+                  : "" || location.pathname === "/contact"
+                  ? classes.links
+                  : ""
+              }`
+            }
+          >
             Landing <img src={Arrow} alt="arrow" />
           </NavLink>
-          <NavLink className={location.pathname === "/contact" && classes.links}>
+          <NavLink
+            className={location.pathname === "/contact" && classes.links}
+          >
             Pages <img src={Arrow} alt="arrow" />
           </NavLink>
           <NavLink
             to="/contact"
-            className={location.pathname === "/contact" && classes.links}
+            className={({ isActive }) => (isActive ? classes.active : "")}
           >
             Docs
           </NavLink>
           <NavLink
             to="/users"
-            className={location.pathname === "/contact" && classes.links}
+            className={({ isActive }) =>
+              `${
+                isActive
+                  ? classes.active
+                  : "" || location.pathname === "/contact"
+                  ? classes.links
+                  : ""
+              }`
+            }
           >
             Users
           </NavLink>
-          <NavLink className={location.pathname === "/contact" && classes.links}>
+          <NavLink
+            className={location.pathname === "/contact" && classes.links}
+          >
             Login
           </NavLink>
         </nav>
